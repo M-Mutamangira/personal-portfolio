@@ -4,7 +4,6 @@ import ContactIcons from '@/components/Contact/ContactIcons';
 import work from '@/data/resume/work';
 import routes from '@/data/routes';
 import { currentPosition } from '@/lib/career';
-import { SOURCE_REPOSITORY } from '@/lib/telemetry';
 import { smartQuotes } from '@/lib/typography';
 import { AUTHOR_NAME } from '@/lib/utils';
 
@@ -53,15 +52,7 @@ export default function Footer({ linksOnly = false }: FooterProps) {
               <p className="footer-role">{`${current.position} at ${current.name}`}</p>
             ) : null}
             <p className="footer-copyright">
-              &copy; {new Date().getFullYear()} ·{' '}
-              <a
-                href={`https://github.com/${SOURCE_REPOSITORY}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Source
-                <span className="sr-only"> (opens in new tab)</span>
-              </a>
+              &copy; {new Date().getFullYear()}
             </p>
           </div>
         </div>
