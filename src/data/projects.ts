@@ -3,16 +3,14 @@
  *
  * Two groups, both kept deliberately:
  *
- * - `shipped` — selected production work Michael built, led, or contributed
+ * - `shipped` — selected production work Munashe built, led, or contributed
  *   to, and can be pointed at.
- * - `archive` — student-era experiments. A register that deletes its own
- *   history is a brochure, so these stay, stepped down rather than removed.
+ * - `archive` — academic projects and student-era experiments.
  *
  * Shipped entries cite either a role in `src/data/resume/work.ts` or the
  * source repository for a personal project. Résumé-backed dates and numeric
  * claims are cross-checked; repository evidence is reviewed when adding or
- * updating an entry. Archive entries are maintained here directly. Public
- * destinations still need live-link review.
+ * updating an entry. Archive entries are maintained here directly.
  */
 type ProjectStatus = 'shipped' | 'archive';
 
@@ -36,7 +34,7 @@ export interface Project {
    */
   image?: string;
   /**
-   * ISO date Michael's work on the project started, or a one-off shipped.
+   * ISO date Munashe's work on the project started, or a one-off shipped.
    * This is project activity, not necessarily a public launch date.
    */
   date: string;
@@ -62,122 +60,106 @@ export interface Project {
  */
 const data: Project[] = [
   {
-    title: 'SF Run Club Index',
-    subtitle: 'Personal project',
-    link: 'https://mldangelo.github.io/run/',
-    sourceRepository: 'https://github.com/mldangelo/run',
-    // Repository created on November 8, 2026; dates render at month precision.
-    date: '2026-11-08',
-    ongoing: true,
-    desc: 'A searchable directory of running clubs, group runs, and races in San Francisco and nearby Bay Area communities. Filter by day, neighborhood, distance, and experience, with meeting details and links to organizer sources.',
+    title: 'Enterprise Backup & Recovery Systems',
+    subtitle:
+      'Kenac Computer Systems · Reserve Bank of Zimbabwe, ZB Bank, Econet',
+    link: 'https://kenac.co.zw',
+    sourceWork: 'Kenac Computer Systems',
+    date: '2023-06-01',
+    endDate: '2024-02-01',
+    desc: 'Managed backup and recovery systems using Veeam and Veritas for enterprise clients, ensuring strict data security and redundancy.',
+    tech: ['Veeam', 'Veritas', 'Backup Systems', 'Risk Mitigation'],
     status: 'shipped',
   },
   {
-    title: 'Codex Security',
-    subtitle: 'OpenAI',
-    link: 'https://openai.com/business/solutions/cybersecurity/',
-    sourceWork: 'OpenAI',
-    // Michael's involvement began with his OpenAI role. The public research
-    // preview launched three days earlier; month-precision UI shows Mar 2026.
-    date: '2026-03-09',
-    ongoing: true,
-    desc: 'Securing AI systems and applying AI to software security at OpenAI — using models to find and fix vulnerabilities in code.',
-    status: 'shipped',
-  },
-  {
-    title: 'Promptfoo',
-    subtitle: 'Co-founder & CTO through acquisition · Continued at OpenAI',
-    link: 'https://promptfoo.dev',
-    sourceWork: 'Promptfoo',
-    date: '2024-07-01',
-    ongoing: true,
-    desc: 'Started as a developer-first eval tool and grew into a platform for AI security, red-teaming, and compliance: evaluation framework, vulnerability scanning, static analysis, and automated red-teaming. Reached more than 350,000 developers, 130,000 monthly active users, and teams at more than 25% of the Fortune 500 before joining OpenAI in 2026.',
-    status: 'shipped',
-  },
-  {
-    title: 'Smile ID',
-    subtitle: 'VP Engineering & Head of AI',
-    link: 'https://smile.id',
-    sourceWork: 'Smile ID',
-    date: '2022-01-01',
-    endDate: '2024-07-01',
-    desc: 'ML-powered identity verification APIs used by banks, fintechs, and telcos across Africa. Re-architected inference to scale from 1,000 to more than 1M users per day, cutting job time from over 30 seconds to 7 seconds, and shipped a fraud detection product built on 1-N facial recognition.',
-    tech: ['AWS Lambda', 'Computer vision', 'Embeddings', 'Vector search'],
-    status: 'shipped',
-  },
-  {
-    title: 'Arthena',
-    subtitle: 'Co-founder & CTO',
-    link: 'https://www.ycombinator.com/companies/arthena',
-    sourceWork: 'Arthena',
-    date: '2014-01-01',
-    endDate: '2022-01-01',
-    desc: 'Quantitative art-investment platform backed by Anthemis, Foundation Capital, and Y Combinator. Built valuation models over irregularly sampled time series, plus the data pipelines and research tools behind them. Masterworks later acquired the company in 2023.',
+    title: 'Hybrid Cloud & AI Infrastructure',
+    subtitle: 'Kenac Computer Systems · Econet Wireless',
+    link: 'https://kenac.co.zw',
+    sourceWork: 'Kenac Computer Systems',
+    date: '2023-06-01',
+    endDate: '2024-02-01',
+    desc: 'Contributed to the physical deployment of a Hybrid Cloud & AI infrastructure for Zimbabwe’s largest telecommunications provider Econet Wireless, enabling their Cloudera data-driven insights initiative.',
     tech: [
-      'Graph embeddings',
-      'Probabilistic forecasting',
-      'Online learning',
-      'Microservices',
+      'Hybrid Cloud',
+      'AI Infrastructure',
+      'Cloudera',
+      'Enterprise Systems',
     ],
     status: 'shipped',
   },
   {
-    title: 'Matroid',
-    subtitle: 'Co-founder',
-    link: 'https://matroid.com',
-    sourceWork: 'Matroid',
-    date: '2015-09-01',
-    endDate: '2016-06-01',
-    desc: 'Computer vision platform for creating and deploying detectors. Architected and built the initial platform for identifying objects, events, and patterns in video, and carried it through the seed round.',
-    tech: ['Computer vision'],
+    title: 'Client Growth & Digital Marketing',
+    subtitle: 'Silverline Group of Companies',
+    link: 'https://silverline.co.zw',
+    sourceWork: 'Silverline Group of Companies',
+    date: '2023-01-01',
+    endDate: '2023-05-01',
+    desc: 'Implemented targeted growth initiatives and data-driven marketing campaigns across business units to expand client retainers and enhance online visibility.',
+    tech: ['Client Retention', 'Growth Strategy', 'Digital Marketing'],
     status: 'shipped',
   },
   {
-    title: 'Nearest Dollar',
-    subtitle: 'BVP Hackathon',
-    image: '/images/projects/nearestdollar.webp',
-    date: '2015-11-20',
-    desc: 'Connected to bank accounts to round up purchases and donate spare change to charity.',
-    tech: ['React', 'Node.js', 'Plaid API', 'MongoDB'],
+    title: 'EcoTrack: Industrial Environmental Intelligence',
+    subtitle:
+      'Full-Stack Developer · University of Johannesburg (Team Artemi9)',
+    link: 'https://eco-track-omega-ten.vercel.app',
+    date: '2026-02-01',
+    endDate: '2026-10-31',
+    desc: 'Engineered the offline-first PWA and collaborated closely with Sonke Vilakazi across backend services, REST APIs, the AI assistant, and emissions intelligence engines to process live ESP32 IoT sensor telemetry for industrial operators on the Mpumalanga Highveld.',
+    tech: [
+      'Next.js 16',
+      'TypeScript',
+      'FastAPI',
+      'Python',
+      'AI Assistant',
+      'Emissions Intelligence',
+      'PWA',
+      'Tailwind CSS',
+      'Mapbox GL',
+      'Supabase',
+      'ESP32 IoT',
+    ],
     status: 'archive',
   },
   {
-    title: 'Harvest',
-    subtitle: '3rd place at TechCrunch Disrupt SF',
-    link: 'https://devpost.com/software/harvest',
-    image: '/images/projects/harvest.webp',
-    date: '2015-09-20',
-    desc: 'Low-cost crop monitoring to catch irrigation leaks and nutrient deficiencies.',
-    tech: ['Python', 'Arduino', 'Computer vision', 'AWS'],
+    title: 'Green City Tycoon: Sustainable Urban Strategy Game',
+    subtitle: 'Game Logic & Mechanics Lead · University of Johannesburg',
+    link: 'https://www.uj.ac.za',
+    date: '2025-08-01',
+    endDate: '2025-08-15',
+    desc: 'Designed gameplay logic, player progression, and scoring mechanics for a strategic simulation board game focused on UN Sustainable Development Goal 11 (Sustainable Cities), integrating resource allocation across renewable energy, water, transit, and housing zones.',
+    tech: [
+      'Game Design',
+      'System Dynamics',
+      'SDG 11',
+      'Resource Modeling',
+      'Creative Problem Solving',
+    ],
     status: 'archive',
   },
   {
-    title: 'Space Potato',
-    subtitle: 'Kickstarter-funded weather balloon',
-    image: '/images/projects/spacepotato.webp',
-    date: '2015-06-28',
-    desc: 'Potato-powered weather balloon with cameras. Photos published in a coffee table book.',
-    tech: ['Hardware', 'GPS', 'Photography'],
+    title: 'Enterprise Architecture Alignment & Modeling',
+    subtitle: 'Architecture Modeler · University of Johannesburg',
+    link: 'https://www.uj.ac.za',
+    date: '2025-03-01',
+    endDate: '2025-05-07',
+    desc: 'Developed an enterprise architecture blueprint using the ArchiMate modeling language and TOGAF-9 framework, mapping business layer capabilities to application services and underlying technology infrastructure.',
+    tech: [
+      'ArchiMate',
+      'TOGAF-9',
+      'Enterprise Architecture',
+      'Archi',
+      'Business Process Modeling',
+    ],
     status: 'archive',
   },
   {
-    title: 'Cat Detector',
-    subtitle: 'CNN for cat breed classification',
-    image: '/images/projects/catdetector.webp',
-    date: '2015-05-15',
-    desc: 'Classified 60,000+ cats across 80 breeds before server costs shut it down.',
-    // TensorFlow was not open-sourced until November 2015, six months after
-    // this project date. No primary source establishes a later port.
-    tech: ['Python', 'CNN', 'AWS'],
-    status: 'archive',
-  },
-  {
-    title: 'UB Nanosatellite Program',
-    subtitle: 'AFRL University Nanosatellite Program',
-    link: 'https://ubnl.space/glados/',
-    date: '2011-06-01',
-    endDate: '2012-05-01',
-    desc: 'Co-authored the grant to design and build a multi-spectral imaging satellite, designed its attitude determination and control, and led a 60-person student team through the development lifecycle.',
+    title: 'Healthcare Data Management Case Study',
+    subtitle: 'University of Johannesburg',
+    link: 'https://www.uj.ac.za',
+    date: '2024-08-01',
+    desc: 'Utilized SQL to clean, normalize, and extract trends from large datasets of patient records, generating structured analytical reports for decision-support scenarios.',
+    tech: ['SQL', 'Data Normalization', 'Relational Databases', 'Analytics'],
     status: 'archive',
   },
 ];

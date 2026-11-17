@@ -58,7 +58,7 @@ describe('json resume document', () => {
       label: profile.role,
       email: profile.email,
       // The display city, without asserting a country.
-      location: { city: 'San Francisco' },
+      location: { city: 'Johannesburg' },
     });
   });
 
@@ -68,8 +68,8 @@ describe('json resume document', () => {
     );
     expect(resume.basics.profiles).toContainEqual({
       network: 'GitHub',
-      username: 'mldangelo',
-      url: 'https://github.com/mldangelo',
+      username: 'M-Mutamangira',
+      url: 'https://github.com/M-Mutamangira',
     });
   });
 
@@ -77,7 +77,7 @@ describe('json resume document', () => {
     expect(resume.work.map((position) => position.name)).toEqual(
       sortPositions(work).map((position) => position.name),
     );
-    expect(resume.work[0]).not.toHaveProperty('endDate');
+    expect(resume.work[0]).toHaveProperty('endDate', '2024-02-01');
     // The page says which role runs alongside the main one, and so does this.
     expect(
       resume.work
@@ -88,9 +88,6 @@ describe('json resume document', () => {
         .filter((position) => position.commitment === 'part-time')
         .map((position) => position.name),
     );
-    expect(
-      resume.work.some((position) => position.commitment === 'part-time'),
-    ).toBe(true);
   });
 
   // Summaries are Markdown with inline anchors, so this reads the real prose.
@@ -100,9 +97,7 @@ describe('json resume document', () => {
       ...(position.highlights ?? []),
     ]);
 
-    expect(prose.join(' ')).toContain(
-      'backed by Anthemis, Foundation Capital, and Y Combinator',
-    );
+    expect(prose.join(' ')).toContain('Econet Wireless');
   });
 
   it('uses schema-valid dates throughout', () => {
@@ -118,10 +113,9 @@ describe('json resume document', () => {
   it('splits the degree string into studyType and area', () => {
     expect(resume.education).toHaveLength(degrees.length);
     expect(resume.education[0]).toMatchObject({
-      institution: 'Stanford University',
-      studyType: 'M.S.',
-      area: 'Computational and Mathematical Engineering (ICME)',
-      endDate: '2016',
+      institution: 'University of Johannesburg',
+      area: 'Bachelor of Commerce in Information Systems',
+      endDate: '2027',
     });
   });
 
@@ -130,7 +124,7 @@ describe('json resume document', () => {
   // cannot express, and joining by containment would double every course.
   it('files each course under exactly one degree', async () => {
     expect(resume.education[0].courses).toContain(
-      'EE 364a - Convex Optimization',
+      'ILS3A01 - Database Systems & Data Warehousing',
     );
     expect(
       resume.education.flatMap((entry) => entry.courses ?? []),

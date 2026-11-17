@@ -4,7 +4,7 @@
 
 Please report privately, through GitHub's
 [private vulnerability reporting](https://github.com/mldangelo/personal-site/security/advisories/new)
-or by email to [hi@mldangelo.com](mailto:hi@mldangelo.com), rather than in a
+or by email to [mutamangiramunashe@gmail.com](mailto:mutamangiramunashe@gmail.com), rather than in a
 public issue. Include the affected URL or file, steps to reproduce, and the
 impact you expect. A small proof of concept helps when it can be shared safely.
 Please allow time to investigate and fix the issue before disclosing it.
