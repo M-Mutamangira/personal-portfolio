@@ -47,12 +47,12 @@
     }
   ],
   "profile": {
-    "name": "Michael D'Angelo",
-    "employer": "OpenAI",
-    "focus": "Promptfoo and other cyber products",
-    "countriesVisited": 55,
-    "computingSince": 1993,
-    "currentCity": "San Francisco"
+    "name": "Munashe Mutamangira",
+    "employer": "University of Johannesburg",
+    "focus": "Enterprise infrastructure, data analytics, and cloud systems",
+    "countriesVisited": 2,
+    "computingSince": 2017,
+    "currentCity": "Johannesburg"
   },
   "colors": {
     "ink": "#292a2e",
@@ -62,100 +62,54 @@
     "accent": "#36559a",
     "hairline": "rgba(35, 39, 46, 0.14)"
   },
-  "generatorDigest": "7229f7e14ac3641615ac7148026bd8fb59d7aeeac3245ae6e7567d145d2f88bd",
-  "imageDigest": "c65a73c3f62da10d330e50caae8bc74a1db46489dc83044dc78b96497cfda86a",
+  "generatorDigest": "3378a836be4393b792384167fed814f083f2f935090557e92fe4d26327fbd6c0",
+  "imageDigest": "82d045413359604ae79ef1f7091d61f9e7f4a681577ed737ee9ff9f5813a2336",
   "posts": [
     {
-      "slug": "why-i-mostly-switched-from-claude-code-to-codex-desktop-app",
-      "path": "/og/writing/why-i-mostly-switched-from-claude-code-to-codex-desktop-app.png",
-      "title": "Why I Mostly Switched From Claude Code to the Codex Desktop App",
-      "description": "How the Codex desktop app became my default coding workspace, and where Claude Code still wins.",
-      "date": "2026-07-30",
-      "dateLabel": "July 30, 2026",
+      "slug": "geopolitical-reflections-2026",
+      "path": "/og/writing/geopolitical-reflections-2026.png",
+      "title": "Global Security in 2026: The Case for Practical Optimism",
+      "description": "A reflection on Janes' 2026 threat assessment, examining systemic friction, regional agency, and the case for practical optimism.",
+      "date": "2026-11-05",
+      "dateLabel": "November 5, 2026",
       "readout": [
         {
           "label": "Words",
-          "value": "2,623"
+          "value": "553"
         },
         {
           "label": "Unique external links",
-          "value": "18"
-        },
-        {
-          "label": "Reading time",
-          "value": "12 min"
-        }
-      ],
-      "imageDigest": "85fe621c1acdac8c0e9ce871c91bdc69223b825abca4e3975e1a9fd989dc6761"
-    },
-    {
-      "slug": "claude-code-outage",
-      "path": "/og/writing/claude-code-outage.png",
-      "title": "Notes on the Claude Code 2.1.0 outage",
-      "description": "A changelog formatting change took down Claude Code. Lessons about parsing human docs as machine data.",
-      "date": "2026-01-08",
-      "dateLabel": "January 8, 2026",
-      "readout": [
-        {
-          "label": "Words",
-          "value": "406"
-        },
-        {
-          "label": "Unique external links",
-          "value": "9"
+          "value": "0"
         },
         {
           "label": "Reading time",
           "value": "2 min"
         }
       ],
-      "imageDigest": "89c983fe636d4c0147424f506e7c8f5ddf2bf1b522f2f85aa66949a910a92b04"
+      "imageDigest": "491e7c2cf90ff52a6bb3c19dfa861f7a05226d9e476ee4251733afa2febf7273"
     },
     {
-      "slug": "eurostar-chatbot-analysis",
-      "path": "/og/writing/eurostar-chatbot-analysis.png",
-      "title": "Notes on the Eurostar chatbot \"vulnerability\" report",
-      "description": "Looking at what makes something a vulnerability versus a hardening opportunity in LLM applications.",
-      "date": "2026-01-05",
-      "dateLabel": "January 5, 2026",
+      "slug": "ecotrack-industrial-heartland",
+      "path": "/og/writing/ecotrack-industrial-heartland.png",
+      "title": "Tracking today Protecting tomorrow: Building EcoTrack for South Africa’s Industrial Heartland",
+      "description": "How we built an offline-first environmental intelligence platform for Mpumalanga's coalfield industrial heartland.",
+      "date": "2026-10-24",
+      "dateLabel": "October 24, 2026",
       "readout": [
         {
           "label": "Words",
-          "value": "868"
+          "value": "821"
         },
         {
           "label": "Unique external links",
-          "value": "9"
+          "value": "0"
         },
         {
           "label": "Reading time",
           "value": "4 min"
         }
       ],
-      "imageDigest": "bc879c38769f9836915b15e5e17b049820f9b08d5e01954e841f0a957eef8c8e"
-    },
-    {
-      "slug": "shipping-with-claude-code",
-      "path": "/og/writing/shipping-with-claude-code.png",
-      "title": "What I learned shipping 1,000+ PRs with Claude Code",
-      "description": "Notes from using Claude Code in parallel git worktrees: Plan Mode, ultrathink, verification loops, and Chrome automation.",
-      "date": "2026-01-03",
-      "dateLabel": "January 3, 2026",
-      "readout": [
-        {
-          "label": "Words",
-          "value": "1,911"
-        },
-        {
-          "label": "Unique external links",
-          "value": "17"
-        },
-        {
-          "label": "Reading time",
-          "value": "8 min"
-        }
-      ],
-      "imageDigest": "6149173111b06f898eb987222738be4c71e00ba8b7d85ffd36292729e0764e7b"
+      "imageDigest": "a562e54c3709aadd663517b2638eb332ba7eac7da56ad519702e9fc37854961a"
     }
   ]
 }

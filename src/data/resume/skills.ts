@@ -5,115 +5,188 @@ export interface Skill {
 }
 
 const skills: Skill[] = [
+  // Databases
+  {
+    title: 'SQL (PostgreSQL & SQL Server)',
+    competency: 5,
+    category: ['Databases'],
+  },
+  {
+    title: 'Database Design & Normalization (1NF–3NF)',
+    competency: 5,
+    category: ['Databases'],
+  },
+  {
+    title: 'Data Warehousing & OLAP',
+    competency: 4,
+    category: ['Databases'],
+  },
+  {
+    title: 'Stored Procedures & Triggers',
+    competency: 4,
+    category: ['Databases'],
+  },
+  {
+    title: 'Relational Algebra & ERD Modeling',
+    competency: 4,
+    category: ['Databases'],
+  },
+
   // Languages
   {
-    title: 'Python',
+    title: 'SQL',
     competency: 5,
+    category: ['Languages'],
+  },
+  {
+    title: 'Python',
+    competency: 4,
+    category: ['Languages'],
+  },
+  {
+    title: 'C# (.NET)',
+    competency: 4,
     category: ['Languages'],
   },
   {
     title: 'TypeScript',
-    competency: 5,
+    competency: 4,
     category: ['Languages'],
   },
+
+  // Systems & Architecture
   {
-    title: 'SQL',
+    title: 'Enterprise Architecture (TOGAF-9 & ArchiMate)',
     competency: 4,
-    category: ['Databases'],
-  },
-  // AI & LLM
-  {
-    title: 'AI Agents',
-    competency: 5,
-    category: ['ML Engineering'],
+    category: ['Systems & Architecture'],
   },
   {
-    title: 'LLM Evaluation',
-    competency: 5,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'AI Red-teaming',
-    competency: 5,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'LLM APIs',
-    competency: 5,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'RAG',
+    title: 'Systems Analysis & Design (UML, DFDs)',
     competency: 4,
-    category: ['ML Engineering'],
+    category: ['Systems & Architecture'],
   },
   {
-    title: 'Prompt Engineering',
+    title: 'SDLC & Agile Methodologies',
     competency: 4,
-    category: ['ML Engineering'],
+    category: ['Systems & Architecture'],
   },
   {
-    title: 'Vector Databases',
+    title: 'IT Project Management (WBS, EVM)',
     competency: 4,
-    category: ['Databases'],
+    category: ['Systems & Architecture'],
   },
-  {
-    title: 'PyTorch',
-    competency: 4,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'Pandas',
-    competency: 5,
-    category: ['ML Engineering'],
-  },
-  // Web Development
-  {
-    title: 'Node.js',
-    competency: 5,
-    category: ['Web Development'],
-  },
-  {
-    title: 'FastAPI',
-    competency: 4,
-    category: ['Web Development'],
-  },
-  {
-    title: 'Next.js',
-    competency: 3,
-    category: ['Web Development'],
-  },
-  // Databases
-  {
-    title: 'PostgreSQL',
-    competency: 4,
-    category: ['Databases'],
-  },
-  {
-    title: 'Redis',
-    competency: 3,
-    category: ['Databases'],
-  },
+
   // Infrastructure
   {
-    title: 'AWS',
+    title: 'Hardware Diagnostics & Technical Support',
+    competency: 5,
+    category: ['Infrastructure'],
+  },
+  {
+    title: 'Hybrid Cloud Infrastructure',
     competency: 4,
     category: ['Infrastructure'],
   },
   {
-    title: 'Docker',
+    title: 'Backup & Recovery (Veeam / Veritas)',
     competency: 4,
     category: ['Infrastructure'],
   },
   {
-    title: 'Kubernetes',
-    competency: 3,
+    title: 'Computer Networking (OSI & TCP/IP)',
+    competency: 4,
     category: ['Infrastructure'],
   },
   {
-    title: 'Observability',
+    title: 'VMware Virtualization',
     competency: 4,
     category: ['Infrastructure'],
+  },
+
+  // Security & Compliance
+  {
+    title: 'Data Privacy & Compliance (POPIA / GDPR)',
+    competency: 4,
+    category: ['Security & Compliance'],
+  },
+  {
+    title: 'Business Continuity & Disaster Recovery (BCP/DR)',
+    competency: 4,
+    category: ['Security & Compliance'],
+  },
+  {
+    title: 'Fraud Protection (IBM Trusteer)',
+    competency: 4,
+    category: ['Security & Compliance'],
+  },
+  {
+    title: 'Identity & Access Management (IAM)',
+    competency: 4,
+    category: ['Security & Compliance'],
+  },
+  {
+    title: 'Network Security (Fortinet FCA/FCF)',
+    competency: 4,
+    category: ['Security & Compliance'],
+  },
+
+  // Business & Strategy
+  {
+    title: 'Stakeholder Management',
+    competency: 5,
+    category: ['Business & Strategy'],
+  },
+  {
+    title: 'Cross-Functional Collaboration',
+    competency: 5,
+    category: ['Business & Strategy'],
+  },
+  {
+    title: 'Lean Startup & Business Model Canvas',
+    competency: 4,
+    category: ['Business & Strategy'],
+  },
+  {
+    title: 'Business Case & Feasibility Analysis',
+    competency: 4,
+    category: ['Business & Strategy'],
+  },
+  {
+    title: 'Financial Management & Budgeting',
+    competency: 4,
+    category: ['Business & Strategy'],
+  },
+  {
+    title: 'Client Growth Strategy',
+    competency: 4,
+    category: ['Business & Strategy'],
+  },
+
+  // Tools
+  {
+    title: 'Microsoft Excel',
+    competency: 5,
+    category: ['Tools'],
+  },
+  {
+    title: 'Microsoft PowerPoint & Word',
+    competency: 5,
+    category: ['Tools'],
+  },
+  {
+    title: 'SQL Server Management Studio (SSMS)',
+    competency: 4,
+    category: ['Tools'],
+  },
+  {
+    title: 'Archi (Enterprise Architecture Modeling)',
+    competency: 4,
+    category: ['Tools'],
+  },
+  {
+    title: 'Visual Studio & VS Code',
+    competency: 4,
+    category: ['Tools'],
   },
 ];
 

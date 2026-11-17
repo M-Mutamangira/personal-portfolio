@@ -32,51 +32,53 @@ describe('resume link data', () => {
     ).toHaveLength(courses.length);
   });
 
-  // Retired company domains may be unregistered or hijacked.
+  // Company domains should be stable URLs.
   it.each([
-    ['Arthena', 'https://www.ycombinator.com/companies/arthena'],
-    [
-      'Planetary Resources',
-      'https://en.wikipedia.org/wiki/Planetary_Resources',
-    ],
-  ])('uses a stable destination for retired company %s', (name, expected) => {
+    ['Kenac Computer Systems', 'https://kenac.co.zw'],
+    ['Silverline Group of Companies', 'https://silverline.co.zw'],
+  ])('uses a stable destination for company %s', (name, expected) => {
     expect(work.find((position) => position.name === name)?.url).toBe(expected);
   });
 
-  // An old class site is often an archived offering under a title the catalogue
-  // has since retired, so a title and its link must come from the same record.
+  // A title and its link must come from the same record.
   it.each([
     [
-      'CME 302',
-      'Numerical Linear Algebra',
-      'https://bulletin.stanford.edu/courses/1057521',
+      'PRO001',
+      'Information Systems Project (Capstone)',
+      'https://www.uj.ac.za',
+    ],
+    ['ILS3A01', 'Database Systems & Data Warehousing', 'https://www.uj.ac.za'],
+    ['ILS3B01', 'Enterprise Systems & IS Management', 'https://www.uj.ac.za'],
+    [
+      'DEV2B01',
+      'IT Infrastructure & Communication Networks',
+      'https://www.uj.ac.za',
     ],
     [
-      'CME 306',
-      'Computational Methods of Applied Mathematics',
-      'https://bulletin.stanford.edu/courses/1174062',
+      'ILS2A01',
+      'Enterprise Architecture & TOGAF Framework',
+      'https://www.uj.ac.za',
     ],
     [
-      'CME 307',
-      'Optimization',
-      'https://bulletin.stanford.edu/courses/1045842',
+      'ILS2B01',
+      'IT Project Management & Earned Value Analysis',
+      'https://www.uj.ac.za',
     ],
+    ['DEV2A01', 'Database Design & Python Development', 'https://www.uj.ac.za'],
     [
-      'CME 308',
-      'Stochastic Methods in Engineering',
-      'https://web.stanford.edu/class/cme308/',
+      'DEV1B01',
+      'Object-Oriented Programming & C# Applications',
+      'https://www.uj.ac.za',
     ],
+    ['ILS1B01', 'Systems Analysis & Design (SAD)', 'https://www.uj.ac.za'],
+    ['ETS13A3', 'Lean Startup & Venture Financing', 'https://www.uj.ac.za'],
     [
-      'CS 131',
-      'Computer Vision: Foundations and Applications',
-      'https://bulletin.stanford.edu/courses/2149051',
+      'ETS22B2',
+      'Creativity, Innovation & Business Modeling',
+      'https://www.uj.ac.za',
     ],
-    [
-      'CS 265',
-      'Randomized Algorithms and Probabilistic Analysis',
-      'https://web.stanford.edu/class/cs265/',
-    ],
-  ])('keeps %s aligned with its Stanford record', (number, title, link) => {
+    ['BMA21B1', 'Business & Financial Management', 'https://www.uj.ac.za'],
+  ])('keeps %s aligned with its course record', (number, title, link) => {
     expect(courses.find((course) => course.number === number)).toMatchObject({
       title,
       link,

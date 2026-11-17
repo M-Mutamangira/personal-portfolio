@@ -31,6 +31,9 @@ function postPath(slug: string): string {
 function externalSource(url: string): string {
   const hostname = new URL(url).hostname.replace(/^www\./, '');
 
+  if (hostname.includes('medium.com')) return 'Medium';
+  if (hostname === 'moneyweb.co.za') return 'Moneyweb';
+  if (hostname === 'janes.com') return 'Janes Defence';
   if (hostname === 'promptfoo.dev') return 'Promptfoo';
   if (hostname === 'linkedin.com') return 'LinkedIn';
 

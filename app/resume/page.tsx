@@ -13,7 +13,6 @@ import courses from '@/data/resume/courses';
 import degrees from '@/data/resume/degrees';
 import { skills } from '@/data/resume/skills';
 import work from '@/data/resume/work';
-import { careerSpanYears } from '@/lib/career';
 import { createPageMetadata } from '@/lib/metadata';
 import { RESUME_JSON_PATH, RESUME_JSON_URL } from '@/lib/resumeJson';
 import { smartQuotes } from '@/lib/typography';
@@ -21,7 +20,7 @@ import { AUTHOR_NAME, SITE_URL } from '@/lib/utils';
 
 const resumeMetadata = createPageMetadata({
   title: 'Resume',
-  description: `${AUTHOR_NAME}'s Resume. OpenAI, Promptfoo, Smile ID, Arthena, Matroid, Stanford ICME, YC alum.`,
+  description: `${AUTHOR_NAME}'s Resume. University of Johannesburg, Kenac Computer Systems, Silverline Group. Enterprise Infrastructure, Data Security, and Analytics.`,
   path: '/resume/',
 });
 
@@ -60,7 +59,6 @@ function contactLink(id: ContactId): string {
 export default function ResumePage() {
   // One read, shared by the headline span and every tenure; baked at build time.
   const now = Date.now();
-  const careerSpan = careerSpanYears(work, now);
   const github = contactLink('github');
   const linkedin = contactLink('linkedin');
 
@@ -93,12 +91,14 @@ export default function ResumePage() {
             </div>
           </div>
           <p className="resume-summary">
-            Engineering leader with a career spanning {careerSpan}+ years across
-            AI, security, and infrastructure. I’m currently a Member of the
-            Technical Staff at OpenAI, working on Promptfoo and other cyber
-            products. I help secure AI systems and use AI to find software
-            vulnerabilities. I co-founded Promptfoo before it joined OpenAI in
-            2026. Stanford MS, YC alum, previously VP Engineering.
+            Final-year BCom Information Systems student at the University of
+            Johannesburg with enterprise technical infrastructure experience and
+            business growth expertise. Proven track record supporting
+            enterprise-level infrastructure projects for major clients like
+            Econet Wireless and the Reserve Bank of Zimbabwe, while driving
+            revenue growth through strategic sales initiatives. Certified in
+            Fraud Protection and Data Security, with strong analytical skills in
+            SQL and Python.
           </p>
           {/* Print-only, but real markup rather than CSS `content`, so it is
               selectable and linkable. Destinations come from shared contact
