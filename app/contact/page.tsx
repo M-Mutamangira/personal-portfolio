@@ -20,8 +20,8 @@ export default function ContactPage() {
         <h1 className="page-title">Get in touch</h1>
         <EmailLink />
         <p className="contact-hint page-prose">
-          I usually respond within 24 hours. For speaking invitations, email is
-          best.
+          I usually respond within 24 hours. Feel free to reach out for
+          opportunities, collaborations, or inquiries.
         </p>
         <ContactIcons includeEmail={false} labelled />
       </section>

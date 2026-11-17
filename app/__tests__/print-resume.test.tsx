@@ -1,18 +1,20 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 
+import certificates from '@/data/resume/certificates';
 import courses from '@/data/resume/courses';
 import degrees from '@/data/resume/degrees';
 import work from '@/data/resume/work';
 import ResumePage from '../resume/page';
 
-// Job and degree links are printed as text, and course links remain PDF
-// annotations, so all three need destinations that still mean something on paper.
+// Job, degree, and certificate links are printed as text, and course links remain PDF
+// annotations, so all need destinations that still mean something on paper.
 describe('resume link data', () => {
-  it('gives every company, school and course a lasting absolute URL', () => {
+  it('gives every company, school, certificate and course a lasting absolute URL', () => {
     for (const link of [
       ...work.map((job) => job.url),
       ...degrees.map((degree) => degree.link),
+      ...certificates.map((cert) => cert.url),
       ...courses.map((course) => course.link),
     ]) {
       const url = new URL(link);

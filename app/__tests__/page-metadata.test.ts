@@ -15,7 +15,6 @@ import { metadata as contactMetadata } from '../contact/page';
 import { metadata as notFoundMetadata } from '../not-found';
 import { metadata as projectsMetadata } from '../projects/page';
 import { metadata as resumeMetadata } from '../resume/page';
-import { metadata as speakingMetadata } from '../speaking/page';
 import { metadata as statsMetadata } from '../stats/page';
 import { generateMetadata as generatePostMetadata } from '../writing/[slug]/page';
 import { metadata as writingMetadata } from '../writing/page';
@@ -37,7 +36,6 @@ describe('page metadata', () => {
     ['contact', contactMetadata, '/contact/'],
     ['projects', projectsMetadata, '/projects/'],
     ['resume', resumeMetadata, '/resume/'],
-    ['speaking', speakingMetadata, '/speaking/'],
     ['stats', statsMetadata, '/stats/'],
     ['writing', writingMetadata, '/writing/'],
     ['404', notFoundMetadata, undefined],

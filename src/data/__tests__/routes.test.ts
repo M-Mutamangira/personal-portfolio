@@ -29,7 +29,7 @@ describe('routes', () => {
         .map((route) => route.path);
 
     expect(paths(true).join(' ')).toBe(
-      '/about /resume /projects /writing /speaking /contact',
+      '/about /resume /projects /writing /contact',
     );
     expect(paths(false)).toEqual(['/stats']);
   });

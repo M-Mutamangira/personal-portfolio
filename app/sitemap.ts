@@ -15,7 +15,6 @@ type CrawlHints = Pick<
 const CRAWL_HINTS: Record<string, CrawlHints> = {
   '/': { priority: 1 },
   '/writing': { changeFrequency: 'weekly' },
-  '/speaking': { priority: 0.7 },
   '/stats': { changeFrequency: 'weekly', priority: 0.5 },
   '/contact': { changeFrequency: 'yearly', priority: 0.5 },
 };

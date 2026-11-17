@@ -2,6 +2,7 @@ import { describe, expect, it, vi } from 'vitest';
 
 import contact from '@/data/contact';
 import profile from '@/data/profile.json';
+import certificates from '@/data/resume/certificates';
 import courses from '@/data/resume/courses';
 import degrees from '@/data/resume/degrees';
 import work from '@/data/resume/work';
@@ -108,6 +109,18 @@ describe('json resume document', () => {
     for (const entry of resume.education) {
       expect(entry.endDate).toMatch(ISO8601);
     }
+    for (const cert of resume.certificates) {
+      expect(cert.date).toMatch(ISO8601);
+    }
+  });
+
+  it('publishes certificates conforming to schema', () => {
+    expect(resume.certificates).toHaveLength(certificates.length);
+    expect(resume.certificates[0]).toMatchObject({
+      name: certificates[0].name,
+      issuer: certificates[0].issuer,
+      url: certificates[0].url,
+    });
   });
 
   it('splits the degree string into studyType and area', () => {

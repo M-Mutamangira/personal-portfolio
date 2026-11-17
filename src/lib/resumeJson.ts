@@ -15,6 +15,7 @@ import { type MarkdownToJSX, parser, RuleType } from 'markdown-to-jsx/markdown';
 
 import { profiles } from '@/data/contact';
 import profile from '@/data/profile.json';
+import certificates from '@/data/resume/certificates';
 import courses from '@/data/resume/courses';
 import degrees from '@/data/resume/degrees';
 import { type Skill, skills } from '@/data/resume/skills';
@@ -91,11 +92,19 @@ interface ResumeSkill {
   keywords: string[];
 }
 
+interface ResumeCertificate {
+  name: string;
+  date: string;
+  issuer: string;
+  url: string;
+}
+
 interface JsonResume {
   $schema: string;
   basics: ResumeBasics;
   work: ResumeWork[];
   education: ResumeEducation[];
+  certificates: ResumeCertificate[];
   skills: ResumeSkill[];
   meta: {
     canonical: string;
@@ -331,12 +340,22 @@ function buildSkills(): ResumeSkill[] {
   }));
 }
 
+function buildCertificates(): ResumeCertificate[] {
+  return certificates.map((cert) => ({
+    name: cert.name,
+    date: cert.date,
+    issuer: cert.issuer,
+    url: cert.url,
+  }));
+}
+
 export function buildJsonResume(): JsonResume {
   return {
     $schema: RESUME_SCHEMA_URL,
     basics: buildBasics(),
     work: buildWork(),
     education: buildEducation(),
+    certificates: buildCertificates(),
     skills: buildSkills(),
     meta: {
       canonical: RESUME_JSON_URL,

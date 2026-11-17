@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-
+import Certificates from '@/components/Resume/Certificates';
 import Courses from '@/components/Resume/Courses';
 import Education from '@/components/Resume/Education';
 import Experience from '@/components/Resume/Experience';
@@ -9,6 +9,7 @@ import Skills from '@/components/Resume/Skills';
 import PageWrapper from '@/components/Template/PageWrapper';
 import contact, { type ContactId } from '@/data/contact';
 import profile from '@/data/profile.json';
+import certificates from '@/data/resume/certificates';
 import courses from '@/data/resume/courses';
 import degrees from '@/data/resume/degrees';
 import { skills } from '@/data/resume/skills';
@@ -121,6 +122,10 @@ export default function ResumePage() {
 
           <section id="education" className="resume-section">
             <Education data={degrees} />
+          </section>
+
+          <section id="certificates" className="resume-section">
+            <Certificates data={certificates} />
           </section>
 
           <section id="skills" className="resume-section">
