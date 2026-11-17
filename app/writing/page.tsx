@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 };
 
 /**
- * One row of the writing register: the same row as /projects and /speaking,
+ * One row of the writing register: the same row as /projects,
  * with the date and source in the gutter and the title in the reading face.
  */
 function WritingItem({ item }: { item: Item }) {

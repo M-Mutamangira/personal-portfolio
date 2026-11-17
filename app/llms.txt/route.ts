@@ -7,7 +7,6 @@ import { metadata as about } from '../about/page';
 import { metadata as contact } from '../contact/page';
 import { metadata as projects } from '../projects/page';
 import { metadata as resume } from '../resume/page';
-import { metadata as speaking } from '../speaking/page';
 import { metadata as stats } from '../stats/page';
 import { metadata as writing } from '../writing/page';
 
@@ -19,7 +18,6 @@ const PAGES: Record<string, Metadata> = {
   '/contact': contact,
   '/projects': projects,
   '/resume': resume,
-  '/speaking': speaking,
   '/stats': stats,
   '/writing': writing,
 };

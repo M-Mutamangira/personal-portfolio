@@ -3,7 +3,7 @@
    Blog list and individual post pages
    ======================================== */
 
-/* The list itself is the register shared with /projects and /speaking
+/* The list itself is the register shared with /projects
    (cards.css); only the header row is the page's own. */
 .page-header {
   display: flex;
