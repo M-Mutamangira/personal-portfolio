@@ -50,7 +50,7 @@
     "name": "Munashe Mutamangira",
     "employer": "University of Johannesburg",
     "focus": "Enterprise infrastructure, data analytics, and cloud systems",
-    "countriesVisited": 2,
+    "countriesVisited": 6,
     "computingSince": 2017,
     "currentCity": "Johannesburg"
   },
@@ -62,8 +62,8 @@
     "accent": "#36559a",
     "hairline": "rgba(35, 39, 46, 0.14)"
   },
-  "generatorDigest": "3378a836be4393b792384167fed814f083f2f935090557e92fe4d26327fbd6c0",
-  "imageDigest": "82d045413359604ae79ef1f7091d61f9e7f4a681577ed737ee9ff9f5813a2336",
+  "generatorDigest": "1efbbc187ceea12b7668bdf05694c9fb5c0d678f4031c000b72471b4542d79a2",
+  "imageDigest": "52cf2fe7a74643d389f6efbdb27f19f17c8e4d3827cd958a84468a82ade9d4f0",
   "posts": [
     {
       "slug": "geopolitical-reflections-2026",
