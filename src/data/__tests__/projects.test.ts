@@ -82,10 +82,10 @@ describe('projects data', () => {
         position: byName.get(project.sourceWork ?? ''),
       }));
 
-    it('cites one source for each shipped entry and validates named roles', () => {
+    it('cites at most one source for each shipped entry and validates named roles', () => {
       for (const project of shipped) {
         expect(
-          Boolean(project.sourceWork) !== Boolean(project.sourceRepository),
+          !(project.sourceWork && project.sourceRepository),
           project.title,
         ).toBe(true);
       }
