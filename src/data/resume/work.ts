@@ -17,6 +17,23 @@ export interface Position {
 
 const work: Position[] = [
   {
+    name: 'theRally',
+    position: 'Operations Manager',
+    url: 'https://therally.co.za/',
+    startDate: '2026-02-01',
+    commitment: 'part-time',
+    summary: `Ensuring all day-to-day operational processes, internal systems management, and administrative functions run smoothly for the social sporting events company.`,
+    highlights: [
+      'Manage day-to-day operational processes and team workflows to support organizational goals.',
+      'Maintain internal systems, digital tools, and comprehensive operational documentation.',
+      'Coordinate team meetings, operational agendas, and action-item follow-ups.',
+      'Onboard new team members and manage volunteer logistics and event staffing.',
+      'Handle resource procurement of materials and operational equipment for sporting events.',
+      'Identify and implement process improvements to enhance operational efficiency across the organization.',
+      'Manage digital ticketing and check-in workflows, including ticket inventory management.',
+    ],
+  },
+  {
     name: 'Kenac Computer Systems',
     position: 'Technical Services Junior Engineer',
     url: 'https://kenac.co.zw',

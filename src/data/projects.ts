@@ -8,9 +8,11 @@
  * - `archive` — academic projects and student-era experiments.
  *
  * Shipped entries cite either a role in `src/data/resume/work.ts` or the
- * source repository for a personal project. Résumé-backed dates and numeric
- * claims are cross-checked; repository evidence is reviewed when adding or
- * updating an entry. Archive entries are maintained here directly.
+ * source repository for a personal project, while client or freelance work
+ * with a private codebase links directly to the production site.
+ * Résumé-backed dates and numeric claims are cross-checked; repository
+ * evidence is reviewed when adding or updating an entry. Archive entries are
+ * maintained here directly.
  */
 type ProjectStatus = 'shipped' | 'archive';
 
@@ -59,6 +61,32 @@ export interface Project {
  * date. `projects.test.ts` pins the complete comparator, including ties.
  */
 const data: Project[] = [
+  {
+    title: 'theRally',
+    subtitle: 'Operations Manager & Web Developer',
+    link: 'https://therally.co.za/',
+    sourceWork: 'theRally',
+    date: '2026-02-01',
+    ongoing: true,
+    desc: 'Engineered the web platform and manage day-to-day operational workflows, volunteer logistics, and digital ticketing systems for theRally, social sporting community.',
+    tech: [
+      'React',
+      'Tailwind CSS',
+      'Supabase',
+      'Operations Management',
+      'Ticketing Systems',
+    ],
+    status: 'shipped',
+  },
+  {
+    title: 'Global Business Consulting',
+    subtitle: 'Freelance Developer',
+    link: 'https://global-business-consulting-pi.vercel.app/',
+    date: '2025-06-01',
+    desc: 'Designed and developed a modern web platform for Global Business Consulting, a management consulting and strategic advisory firm providing business strategy, operational excellence, and digital transformation for enterprises across South Africa and Zimbabwe.',
+    tech: ['Astro', 'TypeScript', 'Tailwind CSS'],
+    status: 'shipped',
+  },
   {
     title: 'Enterprise Backup & Recovery Systems',
     subtitle:

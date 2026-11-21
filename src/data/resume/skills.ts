@@ -132,6 +132,16 @@ const skills: Skill[] = [
 
   // Business & Strategy
   {
+    title: 'Operations Management',
+    competency: 5,
+    category: ['Business & Strategy'],
+  },
+  {
+    title: 'Process Improvement',
+    competency: 4,
+    category: ['Business & Strategy'],
+  },
+  {
     title: 'Stakeholder Management',
     competency: 5,
     category: ['Business & Strategy'],

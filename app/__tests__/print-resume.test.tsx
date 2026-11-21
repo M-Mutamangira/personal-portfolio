@@ -36,6 +36,7 @@ describe('resume link data', () => {
 
   // Company domains should be stable URLs.
   it.each([
+    ['theRally', 'https://therally.co.za/'],
     ['Kenac Computer Systems', 'https://kenac.co.zw'],
     ['Silverline Group of Companies', 'https://silverline.co.zw'],
   ])('uses a stable destination for company %s', (name, expected) => {

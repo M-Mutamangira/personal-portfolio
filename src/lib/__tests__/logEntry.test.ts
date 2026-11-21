@@ -94,7 +94,7 @@ describe('the about page log', () => {
           return [year, age].filter(Boolean).join(' / ');
         })
         .join(', '),
-    ).toBe('2017, 2021, 2022, 2023, 2023, 2024, 2024, 2025, 2026');
+    ).toBe('2017, 2021, 2022, 2023, 2023, 2024, 2024, 2025, 2026, 2026');
   });
 
   it('leaves undated travel entries empty and derives no travel ages', () => {

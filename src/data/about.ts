@@ -2,7 +2,7 @@ import profile from './profile.json';
 
 export const aboutMarkdown = `# Intro
 
-I am a final-year BCom Information Systems student at the [University of Johannesburg](https://www.uj.ac.za) with a unique blend of technical infrastructure experience and business growth expertise.
+I am a final-year BCom Information Systems student at the [University of Johannesburg](https://www.uj.ac.za) with a unique blend of technical infrastructure experience, operations management, and business growth expertise.
 
 I have a proven track record supporting enterprise-level projects for major clients like Econet Wireless and the Reserve Bank of Zimbabwe, while simultaneously driving revenue growth through strategic sales initiatives. Certified in Fraud Protection and Data Security, I leverage strong analytical skills (SQL, Python) and enterprise acumen.
 
@@ -17,11 +17,13 @@ I have a proven track record supporting enterprise-level projects for major clie
 - In 2024, I began my Bachelor of Commerce in Information Systems at the University of Johannesburg.
 - In 2025, I was admitted to the UJenius Club at the University of Johannesburg as a Top Achieving Student.
 - In 2026, I am completing my final year of BCom Information Systems, focusing on database principles, enterprise architecture (TOGAF), and analytics.
+- In 2026, I co-founded and became Operations Manager of [theRally](https://therally.co.za/), a premier padel society and social sporting community started with a group of final-year students at the University of Johannesburg, managing day-to-day operations, ticketing infrastructure, and volunteer logistics.
 
 # I like
 
 - Golf.
 - Tennis.
+- Padel and social sporting event organization.
 - Hiking and travel.
 - Enterprise infrastructure and cloud virtualization.
 - Data analytics and solving complex business problems with SQL and Python.
@@ -34,7 +36,7 @@ I have a proven track record supporting enterprise-level projects for major clie
 # Fun facts
 
 - Certified across several enterprise infrastructure and security tracks, including IBM Trusteer Fraud Protection, IBM Guardium, VMware VTSP, Veeam VMTSP, and Fortinet FCA/FCF.
-- Passionate about both competitive outdoor sports (golf, tennis) and high-availability enterprise server systems.
+- Passionate about competitive racket sports (tennis and padel) and co-founded [theRally](https://therally.co.za/) during my final year at UJ, combining sports culture with systems operations, ticketing technology, and team logistics.
 
 # I dream of
 
@@ -47,4 +49,5 @@ I have a proven track record supporting enterprise-level projects for major clie
 
 - [University of Johannesburg](https://www.uj.ac.za/)
 - [Econet Wireless](https://www.econet.co.zw/)
+- [theRally](https://therally.co.za/)
 `;
