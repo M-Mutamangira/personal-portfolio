@@ -16,6 +16,7 @@ interface FooterProps {
 
 export default function Footer({ linksOnly = false }: FooterProps) {
   const current = currentPosition(work);
+  const showRole = current && current.commitment !== 'part-time';
 
   // Every route, including the ones the header leaves out. Without scripts it
   // is the only way around the site on a phone, whose menu needs them.
@@ -48,7 +49,7 @@ export default function Footer({ linksOnly = false }: FooterProps) {
           </Link>
           <div className="footer-info">
             <span className="footer-name">{smartQuotes(AUTHOR_NAME)}</span>
-            {current ? (
+            {showRole ? (
               <p className="footer-role">{`${current.position} at ${current.name}`}</p>
             ) : null}
             <p className="footer-copyright">
