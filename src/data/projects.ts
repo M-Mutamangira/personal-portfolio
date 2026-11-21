@@ -62,6 +62,23 @@ export interface Project {
  */
 const data: Project[] = [
   {
+    title: 'theRally',
+    subtitle: 'Operations Manager & Web Developer',
+    link: 'https://therally.co.za/',
+    sourceWork: 'theRally',
+    date: '2026-02-01',
+    ongoing: true,
+    desc: 'Engineered the web platform and manage day-to-day operational workflows, volunteer logistics, and digital ticketing systems for theRally, social sporting community.',
+    tech: [
+      'React',
+      'Tailwind CSS',
+      'Supabase',
+      'Operations Management',
+      'Ticketing Systems',
+    ],
+    status: 'shipped',
+  },
+  {
     title: 'Global Business Consulting',
     subtitle: 'Freelance Developer',
     link: 'https://global-business-consulting-pi.vercel.app/',

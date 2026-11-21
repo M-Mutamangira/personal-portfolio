@@ -78,7 +78,7 @@ describe('json resume document', () => {
     expect(resume.work.map((position) => position.name)).toEqual(
       sortPositions(work).map((position) => position.name),
     );
-    expect(resume.work[0]).toHaveProperty('endDate', '2024-02-01');
+    expect(resume.work[0]).not.toHaveProperty('endDate');
     // The page says which role runs alongside the main one, and so does this.
     expect(
       resume.work
